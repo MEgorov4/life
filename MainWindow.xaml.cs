@@ -24,5 +24,10 @@ namespace Life
         {
             InitializeComponent();
         }
+
+        private void elipse1_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            elipse1.Height = 1000;
+        }
     }
 }

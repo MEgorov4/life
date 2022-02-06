@@ -6,7 +6,22 @@
         xmlns:local="clr-namespace:Life"
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="800">
+    <Window.Resources>
+        <ControlTemplate TargetType="CheckBox" x:Key="ChBoxTemplate">
+            <CheckBox>
+            </CheckBox>
+        </ControlTemplate>
+    </Window.Resources>
     <Grid>
-        <Canvas Height="500" Width="700"></Canvas>
+        <ScrollViewer Height="500" Width="700">
+            <Canvas Height="700" Width="700">
+            <Ellipse x:Name="elipse1" Height="100" Width="100" StrokeThickness="2" Stroke="Black" MouseLeftButtonDown="elipse1_MouseLeftButtonDown">
+                
+            </Ellipse>
+                
+        </Canvas>
+            
+        </ScrollViewer>
+
     </Grid>
 </Window>
